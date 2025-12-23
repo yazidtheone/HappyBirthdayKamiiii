@@ -3,69 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday</title>
+<title>Happy Birthday Kamiiiiiiiiiiiiiii</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
   --primary:#b5179e;
-  --dark:#1a1a1a;
-  --bg:#f4f6f8;
+  --bg-dark:#1a1a1a;
+  --bg-light:#f4f6f8;
+  --text-light:#fff;
+  --glass-bg:rgba(255,255,255,0.05);
 }
 
-*{box-sizing:border-box}
+*{box-sizing:border-box; margin:0; padding:0;}
 
 body{
-  margin:0;
-  background:var(--bg);
+  background:linear-gradient(135deg,#7209b7,#b5179e);
   font-family:'Inter',sans-serif;
-  color:var(--dark);
+  color:var(--text-light);
+  line-height:1.8;
+  min-height:100vh;
 }
 
 .container{
   max-width:950px;
-  margin:80px auto;
-  background:#fff;
+  margin:60px auto;
+  background:var(--bg-dark);
   border-radius:20px;
-  box-shadow:0 30px 80px rgba(0,0,0,.15);
+  box-shadow:0 25px 80px rgba(0,0,0,.3);
   overflow:hidden;
+  padding-bottom:40px;
 }
 
-/* HEADER */
+/* HERO */
 .hero{
-  padding:90px 70px;
-  background:linear-gradient(135deg,#7209b7,#b5179e);
-  color:#fff;
+  padding:90px 60px;
+  text-align:center;
 }
 
 .hero h1{
-  margin:0;
   font-family:'Playfair Display',serif;
   font-size:3.2em;
+  margin-bottom:15px;
+  color:#fff;
 }
 
 .hero p{
-  margin-top:15px;
   font-size:1.1em;
   opacity:.9;
 }
 
 /* CONTENT */
 .content{
-  padding:70px;
-  line-height:2.2;
-  font-size:1.05em;
+  padding:60px;
 }
 
 .block{
-  margin-bottom:50px;
-  padding-left:24px;
-  border-left:3px solid var(--primary);
-
+  margin-bottom:40px;
+  padding:25px;
+  border-radius:15px;
+  background:var(--glass-bg);
+  backdrop-filter:blur(12px);
+  border-left:4px solid var(--primary);
+  
   opacity:0;
   transform:translateY(40px);
-  transition:all .9s ease;
+  transition:all 0.9s ease;
 }
 
 .block.show{
@@ -75,41 +79,25 @@ body{
 
 /* SIGNATURE */
 .signature{
-  padding:60px;
   text-align:center;
-  border-top:1px solid #eee;
-  background:#fafafa;
+  padding:50px 20px;
+  margin-top:30px;
+  border-top:1px solid rgba(255,255,255,0.2);
 }
 
 .signature h2{
-  margin:0;
   font-family:'Playfair Display',serif;
   color:var(--primary);
   font-size:2em;
+  margin-bottom:12px;
 }
 
 .signature p{
-  margin-top:15px;
   font-size:1.05em;
 }
-</style>
-</head>
 
-<body>
-
-<div class="container">
-
-<div class="hero">
-<h1>Happy Birth Day My princesse 👑</h1>
-<p>Kamiiiiiiiiiiiiiii</p>
-</div>
-
-<div class="content">
-
-<div class="block">
-Happy Birth Day My princesse Kamiiiiiiiiiiiiiii  
-Lyom nhar special bzaaaaaf nhar li zadt fih lmra li bedlet hyati 180°🥹 mn nhar dkhlty hyaty 7 octobre 2024 🥹 w khliti hyaty dawya ✨ w hlowa kima nty ❤️
-</div>
-
-<div class="block">
-Nbghik
+/* RESPONSIVE */
+@media (max-width:768px){
+  .hero h1{font-size:2.2em;}
+  .content{padding:40px;}
+  .block{padding
