@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday My Princess</title>
+<title>Happy Birthday</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
-    --accent:#ff4d6d;
-    --text:#2b2d42;
-    --bg:#f5f6fa;
+    --primary:#b5179e;
+    --dark:#1a1a1a;
+    --soft:#f8f9fa;
+    --line:#e9ecef;
 }
 
 *{
@@ -20,15 +21,16 @@
 
 body{
     margin:0;
+    background:var(--soft);
     font-family:'Inter',sans-serif;
-    background:var(--bg);
-    color:var(--text);
+    color:var(--dark);
 }
 
-@keyframes fadeUp{
+/* Animation */
+@keyframes reveal{
     from{
         opacity:0;
-        transform:translateY(25px);
+        transform:translateY(20px);
     }
     to{
         opacity:1;
@@ -36,44 +38,25 @@ body{
     }
 }
 
-.wrapper{
-    max-width:900px;
-    margin:60px auto;
-    background:#ffffff;
-    border-radius:18px;
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
-    animation:fadeUp 1.2s ease forwards;
+.container{
+    max-width:850px;
+    margin:80px auto;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+    overflow:hidden;
+    animation:reveal 1.2s ease forwards;
 }
 
-.header{
-    padding:50px 40px;
-    background:#ff4d6d;
-    color:#ffffff;
+/* HERO */
+.hero{
+    padding:70px 60px;
+    background:linear-gradient(135deg,#7209b7,#b5179e);
+    color:#fff;
 }
 
-.header h1{
+.hero h1{
     margin:0;
     font-family:'Playfair Display',serif;
-    font-size:2.6em;
-    animation:fadeUp 1s ease forwards;
-}
-
-.header p{
-    margin-top:10px;
-    font-size:1em;
-    opacity:0;
-    animation:fadeUp 1s ease forwards;
-    animation-delay:.3s;
-}
-
-.content{
-    padding:45px 45px;
-    line-height:2;
-    font-size:1.05em;
-}
-
-.paragraph{
-    margin-bottom:30px;
-    padding-left:18px;
-    border-left:4px solid var(--accent);
-    opacity:0;
+    font-size:3em;
+    lett
