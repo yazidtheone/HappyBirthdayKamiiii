@@ -3,47 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Kamiiiiiiiiiiiiiii</title>
+<title>For My Princess</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
-:root {
-    --pink: #ff4d6d;
-    --purple: #7b2cbf;
-    --dark: #2b2d42;
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    background:#0f0f1a;
+    color:#fff;
+    scroll-behavior:smooth;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+section{
+    min-height:100vh;
+    padding:80px 10%;
+    display:flex;
+    align-items:center;
 }
-
-body {
-    min-height: 100vh;
-    background: linear-gradient(120deg, #ffdde1, #ee9ca7, #c77dff);
-    background-size: 300% 300%;
-    animation: bgMove 12s ease infinite;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+.hero{
+    background:radial-gradient(circle at top,#ff4d6d,#0f0f1a 70%);
+    text-align:center;
+    flex-direction:column;
+    justify-content:center;
 }
-
-@keyframes bgMove {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-size:4em;
+    margin-bottom:20px;
 }
+.hero button{
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:1em;
+    cursor:pointer;
+    background:#fff;
+    color:#ff4d6d;
+}
+.story{
+    background:#111;
+}
+.card{
+    max-width:800px;
+    margin:auto;
+    background:rgba(255,255,255,0.05);
+    padding:40px;
+    border-radius:20px;
+    line-height:2;
+}
+.timeline{
+    background:linear-gradient(120deg,#7209b7,#3a0ca3);
+}
+.year{
+    margin-bottom:30px;
+}
+.final{
+    background:#000;
+    text-align:center;
+}
+.final h2{
+    font-family:'Great Vibes',cursive;
+    font-size:3em;
+}
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+</style>
+</head>
 
-.wrapper {
-    max-width: 950px;
-    width: 100%;
-    backdrop-filter: blur(18px);
-    background: rgba(255,255,255,0.35);
-    border-radius: 30px;
-    padding: 60px;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.2
+<body>
+
+<section class="hero">
+    <h1>Happy Birthday My Princess 👑</h1>
+    <p>Scroll to rea
