@@ -84,4 +84,132 @@ body{
   text-align:center;
   padding:50px 20px;
   margin-top:30px;
-  border-top:1px solid rgba(
+  border-top:1px solid rgba(255,255,255,0.2);
+}
+
+.signature h2{
+  font-family:'Playfair Display',serif;
+  color:var(--primary);
+  font-size:2em;
+  margin-bottom:12px;
+}
+
+.signature p{
+  font-size:1.05em;
+  color:#fff;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .hero h1{font-size:2.2em;}
+  .content{padding:40px;}
+  .block{padding:20px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+<h1>Happy Birth Day My princesse 👑</h1>
+<p>Kamiiiiiiiiiiiiiii</p>
+</div>
+
+<div class="content">
+
+<div class="block">
+Happy Birth Day My princesse Kamiiiiiiiiiiiiiii  
+Lyom nhar special bzaaaaaf nhar li zadt fih lmra li bedlet hyati 180°🥹 mn nhar dkhlty hyaty 7 octobre 2024 🥹 w khliti hyaty dawya ✨ w hlowa kima nty ❤️
+</div>
+
+<div class="block">
+Nbghik bzaf mchi ghi ela zink nbghik ela draftk ela hnantk ela hbalk 🥹 li mkach li yhmlo mn ghiri 🥹 mkch li yaerf 9imt bnty khir mni 🥹
+</div>
+
+<div class="block">
+ana li nbghiha w nhmiha chaba taei 🥹 hda lwkt li rni nktblk fih rani ne3abr fih rani nhki meak 🥹
+</div>
+
+<div class="block">
+معك كل لحظة تصبح قصة 🥺  
+كل يوم يولي صفحة جديدة في حياتنا ✨❤️
+</div>
+
+<div class="block">
+Nbghik w nhss bik fi gae halatk ❤️ hta fi skatk w nfhmk 🫶🏻  
+Nhbk kifach thlmi ❤️ kifach ttkhlyi m3ichtna kifkif fi dar whda 😭❤️
+</div>
+
+<div class="block">
+nhbk kifach b kelma wahda tjrhini w kelma zawja dawini 🫀  
+nhbk psq nty hya kami ✨ meak kolch yehla ❤️
+</div>
+
+<div class="block">
+Mnich hab ngolk joyeux anniversaire  
+Hab n9olk:  
+كل عام و انت السعادة في حياتي  
+كل عام و انت الحلم الذي اعيشه في يومي  
+كل عام و انت الحب الذي يحتلني
+</div>
+
+<div class="block">
+احبك لانك ملكة قلبي  
+لانك كنزي  
+احبك اليوم و غدا و دائما  
+May the coming years be filled with us growing hand in hand
+</div>
+
+<div class="block">
+احبك ليس فقط لما انت عليه بل لما اصبح عليه عندما اكون معك  
+كل يوم معك يشبه اكتشاف صفحة جديدة من كتاب قلبي ❤️
+</div>
+
+<div class="block">
+في عالم مليء بالأشياء الزائفة كنت انت كنزي الذي لا يفنى ✨  
+انت ملكة قلبي 🫶🏻
+</div>
+
+<div class="block">
+Kbrt bnty 🥺 kbrt w zadt kbrt fi eyni ❤️  
+kbrt w kbrt blastha fi 9lby ❤️
+</div>
+
+<div class="block">
+Rah ydkhl 3am jdid w ana meaya afdl insana ❤️  
+dakhlt hyaty f 2024 w habha tb9a meaya kol nhar kol d9i9a ❤️
+</div>
+
+<div class="block">
+Rbi ykhlik lya w ykhlik taj fo9 rassi ❤️❤️  
+Nw3dk n3amlk bl 9ima li testahliha ❤️❤️
+</div>
+
+</div>
+
+<div class="signature">
+<h2>Ikraaaaaaaaaaaaaaaaaaaaaam</h2>
+<p>Nbghik ❤️  
+W andy cadeau chbaaaaab lik 🎁</p>
+</div>
+
+</div>
+
+<script>
+const blocks = document.querySelectorAll('.block');
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{threshold:0.15});
+
+blocks.forEach(block=>observer.observe(block));
+</script>
+
+</body>
+</html>
