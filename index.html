@@ -10,13 +10,13 @@
 <style>
 :root{
   --primary:#b5179e;
-  --bg-dark:#1a1a1a;
-  --bg-light:#f4f6f8;
+  --dark-bg:#1a1a1a;
+  --light-bg:#f4f6f8;
   --text-light:#fff;
-  --glass-bg:rgba(255,255,255,0.05);
+  --glass-bg:rgba(255,255,255,0.1);
 }
 
-*{box-sizing:border-box; margin:0; padding:0;}
+*{box-sizing:border-box;margin:0;padding:0;}
 
 body{
   background:linear-gradient(135deg,#7209b7,#b5179e);
@@ -29,7 +29,7 @@ body{
 .container{
   max-width:950px;
   margin:60px auto;
-  background:var(--bg-dark);
+  background:rgba(30,30,30,0.95);
   border-radius:20px;
   box-shadow:0 25px 80px rgba(0,0,0,.3);
   overflow:hidden;
@@ -51,7 +51,8 @@ body{
 
 .hero p{
   font-size:1.1em;
-  opacity:.9;
+  opacity:.95;
+  color:#f0e6ff;
 }
 
 /* CONTENT */
@@ -64,9 +65,10 @@ body{
   padding:25px;
   border-radius:15px;
   background:var(--glass-bg);
-  backdrop-filter:blur(12px);
+  backdrop-filter:blur(8px);
   border-left:4px solid var(--primary);
-  
+  color:#fff;
+
   opacity:0;
   transform:translateY(40px);
   transition:all 0.9s ease;
@@ -82,22 +84,4 @@ body{
   text-align:center;
   padding:50px 20px;
   margin-top:30px;
-  border-top:1px solid rgba(255,255,255,0.2);
-}
-
-.signature h2{
-  font-family:'Playfair Display',serif;
-  color:var(--primary);
-  font-size:2em;
-  margin-bottom:12px;
-}
-
-.signature p{
-  font-size:1.05em;
-}
-
-/* RESPONSIVE */
-@media (max-width:768px){
-  .hero h1{font-size:2.2em;}
-  .content{padding:40px;}
-  .block{padding
+  border-top:1px solid rgba(
