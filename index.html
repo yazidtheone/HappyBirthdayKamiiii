@@ -11,9 +11,8 @@
 :root{
   --primary:#b5179e;
   --dark-bg:#1a1a1a;
-  --light-bg:#f4f6f8;
   --text-light:#fff;
-  --glass-bg:rgba(255,255,255,0.1);
+  --glass-bg:rgba(255,255,255,0.05);
 }
 
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -29,7 +28,7 @@ body{
 .container{
   max-width:950px;
   margin:60px auto;
-  background:rgba(30,30,30,0.95);
+  background:var(--dark-bg);
   border-radius:20px;
   box-shadow:0 25px 80px rgba(0,0,0,.3);
   overflow:hidden;
@@ -38,13 +37,13 @@ body{
 
 /* HERO */
 .hero{
-  padding:90px 60px;
+  padding:80px 60px;
   text-align:center;
 }
 
 .hero h1{
   font-family:'Playfair Display',serif;
-  font-size:3.2em;
+  font-size:3em;
   margin-bottom:15px;
   color:#fff;
 }
